@@ -318,6 +318,24 @@ body{
     .order button {
         width: 100%;
     }
+
+    .shoes{
+        margin-left: 5px;
+        background-color:darkolivegreen;
+    }
+
+    .bags{
+        margin-left: 5px;
+        background-color:darkolivegreen;
+    }
+
+    .shoes input{
+        width: 180px;
+    }
+
+    .bags input{
+        width: 180px;
+    }
 }
 
 

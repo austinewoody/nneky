@@ -403,11 +403,11 @@
         <form action="https://formspree.io/f/xwpknynr" method="POST">
             <div class="order1">
             <label>Name</label>
-            <input type="text" name="name">
+            <input type="text" name="name" required>
             <label>Email</label>
-            <input type="email" name="email">
+            <input type="email" name="email" required>
             <label>Phone</label>
-            <input type="tel" name="phone">
+            <input type="tel" name="phone" required>
             </div>
             <div>
             <label class="order2">Select Product</label>
@@ -418,18 +418,18 @@
             </select>
             <div class="shoes" id="shoes">
                 <label>Shoe Name</label>
-                <input type="text" name="shoe_name"><br>
+                <input type="text" name="shoe_name" required><br>
                 <label class="size">Size</label>
-                <input type="text" name="size">
+                <input type="text" name="size" required>
             </div>
             <div class="bags" id="bags">
                 <label>Bag Name</label>
-                <input type="text" name="bag_name"><br>
+                <input type="text" name="bag_name" required><br>
                 <label class="colour">Colour</label>
-                <input type="text" name="colour">
+                <input type="text" name="colour" required>
             </div>
             <label>Quantity</label>
-            <input type="number" name="quantity"><br>
+            <input type="number" name="quantity" required><br>
             </div>
             <button type="submit">Submit</button>
         </form>
