@@ -1,0 +1,380 @@
+body{
+    background-color: rgb(241, 241, 236);
+}
+
+.home_pics{
+    width: 20vw;
+    height: 20vh;
+    margin-left: 40px;
+    margin-top: 70px;
+    position: absolute;
+}
+
+.home_pics2{
+    width: 20vw;
+    height: 20vh;
+    margin-left: 1100px;
+    margin-top: 70px;
+    position: absolute;
+}
+
+.header{
+    text-align: center;
+}
+
+.header p{
+    font-size: 100px;
+    color:rgb(39, 56, 11);
+    font-weight: bold;
+    font-family: Edwardian Script ITC;
+}
+
+.header h2{
+    color: rgb(196, 148, 86);
+}
+
+.product1 img{
+    width: 10vw;
+    height: 30vh;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.product1 img:hover{
+    transform: scale(1.2);
+}
+
+.product1{
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+    border-radius: 4px;
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    gap: 4.1rem;
+    font-family: Adobe Caslon Pro;
+}
+
+.product2 img{
+    width: 10vw;
+    height: 30vh;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.product2 img:hover{
+    transform: scale(1.2);
+}
+
+.product2{
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+    border-radius: 4px;
+}
+
+.product3 img{
+    width: 10vw;
+    height: 30vh;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.product3 img:hover{
+    transform: scale(1.2);
+}
+
+.product3{
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+    border-radius: 4px;
+}
+
+.product4 img{
+    width: 10vw;
+    height: 30vh;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.product4 img:hover{
+    transform: scale(1.2);
+}
+
+.product4{
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+    border-radius: 4px;
+}
+
+.product5 img{
+    width: 10vw;
+    height: 30vh;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.product5 img:hover{
+    transform: scale(1.2);
+}
+
+.product5{
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+    border-radius: 4px;
+}
+
+.product6 img{
+    width: 10vw;
+    height: 30vh;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.product6 video{
+    width: 10vw;
+    height: 30vh;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.product6 img:hover{
+    transform: scale(1.2);
+}
+
+.product6{
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+    border-radius: 4px;
+}
+
+.order{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 200px;
+    background-color:rgb(18, 27, 3);
+    color: whitesmoke;
+    padding-top: 50px;
+    padding-bottom: 110px;
+    border-radius: 4px;
+    font-family: Adobe Caslon Pro;
+}
+
+.order1{
+    padding-left: 320px;
+}
+
+.order2{
+    padding-left: 265px;
+}
+
+.order input{
+    width: 220px;
+    height: 35px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.order h2{
+    text-align: center;
+    font-family: DejaVu Sans Light;
+}
+
+.order p{
+    text-align: center;
+}
+
+#product{
+    width: 200px;
+    margin-top: 20px;
+    background-color: dimgrey;
+    color: white;
+    font-size: 15px;
+}
+
+#product option{
+    text-align: center;
+}
+
+.shoes{
+    margin-left: 200px;
+    position: absolute;
+    display: none;
+}
+
+.bags{
+    margin-left: 220px;
+    position: absolute;
+    display: none;
+}
+
+.shoes input{
+    width: 280px;
+    height: 30px;
+}
+
+.bags input{
+    width: 280px;
+    height: 30px;
+}
+
+.size{
+    margin-left: 45px;
+}
+
+.colour{
+    margin-left: 25px;
+}
+
+.order button{
+    margin-left: 675px;
+    width: 140px;
+    height: 30px;
+    background-color: blue;
+    border: thin solid blue;
+    border-radius: 5px;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.order button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+@media screen and (max-width: 768px) {
+    .home_pics, .home_pics2 {
+        width: 40vw;
+        height: 20vh;
+        margin-left: 20px;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .product1, .product2, .product3, .product4, .product5, .product6 {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .description {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .order {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .order input {
+        width: 90%;
+    }
+
+    .order button {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .header p {
+        font-size: 50px;
+    }
+
+    .product1 img, .product2 img, .product3 img, .product4 img, .product5 img, .product6 img {
+        width: 80%;
+        height: auto;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .order h2 {
+        font-size: 18px;
+    }
+
+    .order input, #product {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .order button {
+        width: 100%;
+    }
+}
+
+
+/* Large screens (1200px and above) */
+@media (min-width: 1200px) {
+    .product {
+        width: calc(25% - 20px);
+    }
+}
+
+/* Medium screens (992px to 1199px) */
+@media (max-width: 1199px) {
+    .product {
+        width: calc(33.33% - 20px);
+    }
+    .products-section {
+        padding: 15px;
+    }
+}
+
+/* Small screens (768px to 991px) */
+@media (max-width: 991px) {
+    .product {
+        width: calc(50% - 20px);
+    }
+    .order {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+/* Extra small screens (576px to 767px) */
+@media (max-width: 767px) {
+    .product {
+        width: 100%;
+    }
+    .order {
+        width: 95%;
+        padding: 15px;
+    }
+    .header p {
+        font-size: 18px;
+    }
+    .header h2 {
+        font-size: 14px;
+    }
+}
+
+/* Ultra-small screens (below 576px) */
+@media (max-width: 575px) {
+    .product {
+        width: 100%;
+    }
+    .order {
+        width: 100%;
+        padding: 10px;
+    }
+    .header p {
+        font-size: 16px;
+    }
+    .header h2 {
+        font-size: 12px;
+    }
+}
