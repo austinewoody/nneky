@@ -1,402 +1,161 @@
-body{
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     background-color: rgb(241, 241, 236);
+    font-family: Arial, sans-serif;
 }
 
-.home_pics{
-    width: 20vw;
-    height: 20vh;
-    margin-left: 40px;
-    margin-top: 70px;
-    position: absolute;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.home_pics2{
-    width: 20vw;
-    height: 20vh;
-    margin-left: 1100px;
-    margin-top: 70px;
-    position: absolute;
+.home-pic, .home-pic2 {
+    width: 15vw;
+    height: auto;
 }
 
-.header{
+.header-content {
     text-align: center;
+    flex-grow: 1;
 }
 
-.header p{
-    font-size: 100px;
-    color:rgb(39, 56, 11);
+.store-name {
+    font-size: 3rem;
+    color: rgb(39, 56, 11);
     font-weight: bold;
-    font-family: Edwardian Script ITC;
+    font-family: 'Edwardian Script ITC', cursive;
 }
 
-.header h2{
+.store-tagline {
+    font-size: 2rem;
     color: rgb(196, 148, 86);
 }
 
-.product1 img{
-    width: 10vw;
-    height: 30vh;
-    margin: 30px;
-    border-radius: 5px;
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
 }
 
-.product1 img:hover{
-    transform: scale(1.2);
+.product-group {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
-.product1{
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: 50px;
-    border-radius: 4px;
-}
-
-.description{
+.product-images {
     display: flex;
-    justify-content: center;
-    gap: 4.1rem;
-    font-family: Adobe Caslon Pro;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
-.product2 img{
-    width: 10vw;
-    height: 30vh;
-    margin: 30px;
-    border-radius: 5px;
-}
-
-.product2 img:hover{
-    transform: scale(1.2);
-}
-
-.product2{
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: 50px;
+.product-images img {
+    width: 100%;
+    height: auto;
     border-radius: 4px;
+    transition: transform 0.3s ease;
 }
 
-.product3 img{
-    width: 10vw;
-    height: 30vh;
-    margin: 30px;
-    border-radius: 5px;
+.product-images img:hover {
+    transform: scale(1.05);
 }
 
-.product3 img:hover{
-    transform: scale(1.2);
+.product-description {
+    padding: 10px;
+    background-color: #fff;
 }
 
-.product3{
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: 50px;
+.product-description .product-item {
+    margin-bottom: 20px;
+}
+
+.product-description label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-description select,
+.product-description input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
     border-radius: 4px;
+    border: 1px solid #ddd;
 }
 
-.product4 img{
-    width: 10vw;
-    height: 30vh;
-    margin: 30px;
-    border-radius: 5px;
-}
-
-.product4 img:hover{
-    transform: scale(1.2);
-}
-
-.product4{
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: 50px;
-    border-radius: 4px;
-}
-
-.product5 img{
-    width: 10vw;
-    height: 30vh;
-    margin: 30px;
-    border-radius: 5px;
-}
-
-.product5 img:hover{
-    transform: scale(1.2);
-}
-
-.product5{
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: 50px;
-    border-radius: 4px;
-}
-
-.product6 img{
-    width: 10vw;
-    height: 30vh;
-    margin: 30px;
-    border-radius: 5px;
-}
-
-.product6 video{
-    width: 10vw;
-    height: 30vh;
-    margin: 30px;
-    border-radius: 5px;
-}
-
-.product6 img:hover{
-    transform: scale(1.2);
-}
-
-.product6{
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: 50px;
-    border-radius: 4px;
-}
-
-.order{
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 200px;
-    background-color:rgb(18, 27, 3);
-    color: whitesmoke;
-    padding-top: 50px;
-    padding-bottom: 110px;
-    border-radius: 4px;
-    font-family: Adobe Caslon Pro;
-}
-
-.order1{
-    padding-left: 320px;
-}
-
-.order2{
-    padding-left: 265px;
-}
-
-.order input{
-    width: 220px;
-    height: 35px;
-    border-radius: 4px;
-    margin-top: 15px;
-}
-
-.order h2{
-    text-align: center;
-    font-family: DejaVu Sans Light;
-}
-
-.order p{
+.order-section {
+    padding: 40px 20px;
+    background-color: #1e1e1e;
+    color: #fff;
     text-align: center;
 }
 
-#product{
-    width: 200px;
-    margin-top: 20px;
-    background-color: dimgrey;
-    color: white;
-    font-size: 15px;
+.order-form {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-#product option{
-    text-align: center;
+.order-form label {
+    display: block;
+    margin-bottom: 8px;
 }
 
-.shoes{
-    margin-left: 200px;
-    position: absolute;
-    display: none;
+.order-form input,
+.order-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
 }
 
-.bags{
-    margin-left: 220px;
-    position: absolute;
-    display: none;
-}
-
-.shoes input{
-    width: 280px;
-    height: 30px;
-}
-
-.bags input{
-    width: 280px;
-    height: 30px;
-}
-
-.size{
-    margin-left: 45px;
-}
-
-.colour{
-    margin-left: 25px;
-}
-
-.order button{
-    margin-left: 675px;
-    width: 140px;
-    height: 30px;
-    background-color: blue;
-    border: thin solid blue;
-    border-radius: 5px;
-    color: white;
-    margin-top: 20px;
+.order-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
 }
 
-.order button:hover{
-    background-color: white;
-    color: black;
+.order-form button:hover {
+    background-color: #0056b3;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-content {
+        text-align: left;
+    }
 
-@media screen and (max-width: 768px) {
-    .home_pics, .home_pics2 {
+    .home-pic, .home-pic2 {
         width: 40vw;
-        height: 20vh;
-        margin-left: 20px;
-        margin-top: 20px;
-        position: relative;
     }
 
-    .product1, .product2, .product3, .product4, .product5, .product6 {
-        margin: 20px;
-        text-align: center;
-    }
-
-    .description {
+    .product-images {
         flex-direction: column;
-        align-items: center;
-        gap: 1rem;
     }
 
-    .order {
-        margin: 10px;
-        padding: 20px;
-    }
-
-    .order input {
-        width: 90%;
-    }
-
-    .order button {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-}
-
-
-@media screen and (max-width: 480px) {
-    .header p {
-        font-size: 50px;
-    }
-
-    .product1 img, .product2 img, .product3 img, .product4 img, .product5 img, .product6 img, .product6 video {
-        width: 80%;
-        height: auto;
-    }
-
-    .description {
-        font-size: 14px;
-    }
-
-    .order h2 {
-        font-size: 18px;
-    }
-
-    .order input, #product {
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .order .order1{
-        padding-left: 5px;
-    }
-
-    .order button {
-        width: 100%;
-    }
-
-    .shoes{
-        margin-left: 5px;
-        background-color:darkolivegreen;
-    }
-
-    .bags{
-        margin-left: 5px;
-        background-color:darkolivegreen;
-    }
-
-    .shoes input{
-        width: 180px;
-    }
-
-    .bags input{
-        width: 180px;
-    }
-}
-
-
-/* Large screens (1200px and above) */
-@media (min-width: 1200px) {
-    .product {
-        width: calc(25% - 20px);
-    }
-}
-
-/* Medium screens (992px to 1199px) */
-@media (max-width: 1199px) {
-    .product {
-        width: calc(33.33% - 20px);
-    }
-    .products-section {
-        padding: 15px;
-    }
-}
-
-/* Small screens (768px to 991px) */
-@media (max-width: 991px) {
-    .product {
-        width: calc(50% - 20px);
-    }
-    .order {
-        width: 80%;
-        margin: 10px auto;
-    }
-}
-
-/* Extra small screens (576px to 767px) */
-@media (max-width: 767px) {
-    .product {
-        width: 100%;
-    }
-    .order {
-        width: 95%;
-        padding: 15px;
-    }
-    .header p {
-        font-size: 18px;
-    }
-    .header h2 {
-        font-size: 14px;
-    }
-}
-
-/* Ultra-small screens (below 576px) */
-@media (max-width: 575px) {
-    .product {
-        width: 100%;
-    }
-    .order {
+    .order-form {
         width: 100%;
         padding: 10px;
     }
-    .header p {
-        font-size: 16px;
-    }
-    .header h2 {
-        font-size: 12px;
+
+    .order-form button {
+        width: 100%;
     }
 }
